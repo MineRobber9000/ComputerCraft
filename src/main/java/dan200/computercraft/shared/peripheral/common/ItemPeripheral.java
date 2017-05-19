@@ -61,6 +61,10 @@ public class ItemPeripheral extends ItemPeripheralBase
                 stack = new ItemStack(this, quantity, 5);
                 break;
             }
+            case Chatbox:
+            {
+                stack = new ItemStack(this, quantity, 5);
+            }
 
             default:
             {
@@ -84,6 +88,7 @@ public class ItemPeripheral extends ItemPeripheralBase
         list.add( PeripheralItemFactory.create( PeripheralType.AdvancedMonitor, null, 1 ) );
         list.add( PeripheralItemFactory.create( PeripheralType.WirelessModem, null, 1 ) );
         list.add( PeripheralItemFactory.create( PeripheralType.Speaker, null, 1) );
+        list.add( PeripheralItemFactory.create( PeripheralType.Chatbox, null, 1) )
     }
 
     @Override
