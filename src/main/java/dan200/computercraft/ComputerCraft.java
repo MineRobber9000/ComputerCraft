@@ -178,6 +178,7 @@ public class ComputerCraft
         public static PocketModem wirelessModem;
         public static PocketModem advancedModem;
         public static PocketSpeaker pocketSpeaker;
+        public static PocketChatbox pocketChatbox;
     }
 
     public static class Config {
