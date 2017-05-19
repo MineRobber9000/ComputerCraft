@@ -110,6 +110,10 @@ public class BlockPeripheral extends BlockPeripheralBase
         {
             state = state.withProperty( Properties.VARIANT, BlockPeripheralVariant.Speaker);
         }
+        else if (meta == 14)
+        {
+            state = state.withProperty( Properties.VARIANT, BlockPeripheralVariant.Chatbox);
+        }
         return state;
     }
 
@@ -172,6 +176,11 @@ public class BlockPeripheral extends BlockPeripheralBase
             case Speaker:
             {
                 meta = 13;
+                break;
+            }
+            case Chatbox:
+            {
+                meta = 14;
                 break;
             }
         }
